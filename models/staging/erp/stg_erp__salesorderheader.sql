@@ -7,7 +7,7 @@ with
      ,renomeacao as (
         select
 
-            ,cast(SALESORDERID as int) as pk_pedido
+            cast(SALESORDERID as int) as pk_pedido
             ,cast(STATUS as int) as fk_status_pedido
             ,cast(CUSTOMERID as int) as fk_cliente
             ,cast(TERRITORYID as int) as fk_regiao
