@@ -12,4 +12,11 @@ sources:
           - name: salesorderid
             data_tests:
               - unique
+              - not_null
+      - name: salesorderdetail
+        description: Contém detalhes de cada item dentro de um pedido.
+        columns:
+          - name: idsalesorderdetailid
+            data_tests:
+              - unique
               - not_null          

@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheaderdetail
+    description: Tabela de preparação dos dados brutos dos pedidos.
+
+    columns:
+      - name: pk_pedido_item
+        description: Chave primaria do item do pedido de venda.
+
+      - name: fk_pedido
+        description: Chave estrangeira do pedido de venda.  
+
+      - name: fk_produto
+        description: Chave estrangeira do produto do pedido.          
+
+      - name: qtd_pedido_item
+        description: Quantidade de item do pedido de venda.        
+
+      - name: vlr_item
+        description: Valor do item (unitario) do pedido de venda.
+      
+      - name: pct_desconto_item
+        description: Percentual de desconto no valor do item (unitario) do pedido de venda.
+
