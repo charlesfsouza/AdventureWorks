@@ -1,0 +1,34 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheader
+    description: Tabela de preparação dos dados brutos dos pedidos.
+
+    columns:
+      - name: pk_pedido
+        description: Chave primaria do pedido de venda.
+
+      - name: fk_status_pedido
+        description: Chave estrangeira do pedido de venda.  
+
+      - name: fk_cliente
+        description: Chave estrangeira cliente que realizou o pedido.          
+
+      - name: fk_regiao
+        description: Chave estrangeira regiao / territorial do pedido.        
+
+      - name: fk_cartao_credito
+        description: Chave estrangeira do cartao de credito utilizado no pedido.
+      
+      - name: fk_dat_pedido
+        description: Chave estrangeira para data do pedido.
+
+      - name: fk_dat_vencimento
+        description: Chave estrangeira para data do vencimento do pedido, ou seja, data máxima em que o pedido deve ser pago.
+
+      - name: fk_dat_envio
+        description: Chave estrangeira para data de envio do pedido.
+
+      - name: qtd_pedido
+        description: Contador de quantidade de pedido.  
+
