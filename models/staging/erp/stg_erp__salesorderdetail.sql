@@ -1,5 +1,5 @@
 with
-    fonte_pedido_item as (
+    fonte_pedidos_detalhes as (
         select *
         from {{ source('erp_adventureworks', 'salesorderdetail') }}
      )   
