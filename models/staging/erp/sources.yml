@@ -16,7 +16,7 @@ sources:
       - name: salesorderdetail
         description: Contém detalhes de cada item dentro de um pedido.
         columns:
-          - name: idsalesorderdetailid
+          - name: salesorderdetailid
             data_tests:
               - unique
               - not_null          
