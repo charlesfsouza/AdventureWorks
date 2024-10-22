@@ -1,7 +1,7 @@
 with
     fonte_pedido_item as (
         select *
-        from {{ source('erp_adventureworks', 'salesorderheaderdetail') }}
+        from {{ source('erp_adventureworks', 'salesorderdetail') }}
      )   
 
      ,renomeacao as (

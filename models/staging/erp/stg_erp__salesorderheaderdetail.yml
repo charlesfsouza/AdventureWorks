@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_erp__salesorderheaderdetail
+  - name: stg_erp__salesorderdetail
     description: Tabela de preparação dos dados brutos dos pedidos.
 
     columns:
