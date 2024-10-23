@@ -37,5 +37,13 @@ sources:
               - unique
               - not_null
 
+      - name: productcategory
+        description: Contém o agrupamento dos produtos por categorias mais amplas.
+        columns:
+          - name: productcategoryid
+            data_tests:
+              - unique
+              - not_null
+
 
 

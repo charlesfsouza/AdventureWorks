@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: stg_erp__productcategory
+    description: Tabela de preparação dos dados brutos dos produtos.
+
+    columns:
+      - name: pk_produto_categoria
+        description: Chave primaria da categoria do produto.
+
+      - name: dsc_produto_categoria
+        description: Descrição da categoria do produto.          
+
+
