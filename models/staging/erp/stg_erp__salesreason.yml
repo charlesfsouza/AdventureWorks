@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_erp__salesreason
+    description: Tabela de preparação dos dados brutos dos pedidos.
+
+    columns:
+      - name: pk_motivo
+        description: Chave primaria do motivo do pedido.
+
+      - name: dsc_motivo
+        description: Descrição do motivo do pedido.  
+
+      - name: dsc_motivo_tipo
+        description:  Descrição do tipo do motivo do pedido.         
+
+

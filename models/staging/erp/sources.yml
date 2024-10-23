@@ -51,4 +51,11 @@ sources:
           - name: salesorderid
             data_tests:
               - not_null 
-
+              
+      - name: salesreason
+        description: Contém os motivos das vendas.
+        columns:
+          - name: salesreasonid
+            data_tests:
+              - unique
+              - not_null
