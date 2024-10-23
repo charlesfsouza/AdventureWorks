@@ -20,3 +20,11 @@ sources:
             data_tests:
               - unique
               - not_null          
+
+      - name: productsubcategory
+        description: Contém o agrupamento dos produtos por subcategorias.
+        columns:
+          - name: productsubcategoryid
+            data_tests:
+              - unique
+              - not_null              
