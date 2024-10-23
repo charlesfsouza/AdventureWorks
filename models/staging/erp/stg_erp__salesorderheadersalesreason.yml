@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: stg_erp__salesorderheadersalesreason
+    description: Tabela de preparação dos dados brutos dos pedidos.
+
+    columns:
+      - name: pk_motivo_pedido
+        description: Chave primaria do motivo pedido.
+
+      - name: fk_motivo
+        description: Chave estrangeira do motivo do pedido.  
+
+      - name: fk_pedido
+        description: Chave estrangeira do pedido.          
+
+
