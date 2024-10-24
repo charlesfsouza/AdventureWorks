@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_erp__creditcard
+    description: Tabela de preparação dos dados brutos dos cartões de crédito.
+
+    columns:
+      - name: pk_cartao_credito
+        description: Chave primaria do cartão de crédito.
+
+      - name: dsc_tipo_cartao
+        description: Descrição do tipo de cartão de crédito.  
+       
+
+

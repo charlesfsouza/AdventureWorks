@@ -59,3 +59,10 @@ sources:
             data_tests:
               - unique
               - not_null
+      - name: creditcard
+        description: Contém informações sobre os cartões de crédito dos clientes, caso aplicável.
+        columns:
+          - name: creditcardid
+            data_tests:
+              - unique
+              - not_null
