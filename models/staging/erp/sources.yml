@@ -66,3 +66,11 @@ sources:
             data_tests:
               - unique
               - not_null
+
+      - name: address
+        description: Contém endereços de clientes, lojas e outros locais.
+        columns:
+          - name: addressid
+            data_tests:
+              - unique
+              - not_null             

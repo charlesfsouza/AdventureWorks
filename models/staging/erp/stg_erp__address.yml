@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__address
+    description: Tabela de preparação dos dados brutos dos endereços.
+
+    columns:
+      - name: pk_endereco
+        description: Chave primaria do endereço.
+
+      - name: fk_provincia_estado
+        description: Chave estrangeira da provincia estado.  
+
+      - name: dsc_cidade
+        description: Descrição / nome da cidade.   
+       
+
+
