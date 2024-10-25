@@ -8,7 +8,7 @@ with
         select
 
             cast(territoryid as int)  as pk_territorio
-            ,cast(countryregioncode as int) as fk_pais
+            ,cast(countryregioncode as string) as fk_pais
             ,cast(name as string) as nom_territorio
             ,cast("group" as string) as nom_continente
 
