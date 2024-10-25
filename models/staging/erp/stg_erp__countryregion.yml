@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_erp__creditcard
+  - name: stg_erp__countryregion
     description: Tabela de preparação dos dados brutos dos cartões de crédito.
 
     columns:
