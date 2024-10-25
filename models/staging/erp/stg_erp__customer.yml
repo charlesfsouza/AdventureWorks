@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__customer
+    description: Tabela de preparação dos dados brutos de cliente.
+
+    columns:
+      - name: pk_cliente
+        description: Chave primaria de cliente.
+
+      - name: pk_pessoa
+        description: Chave estrangeira de pessoa.  
+
+      - name: fk_loja
+        description: Chave estrangeira de loja.       
+
+      - name: fk_territorio
+        description: Chave estrangeira de territorio.            
+
+
