@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__person
+    description: Tabela de preparação dos dados brutos das pessoas.
+
+    columns:
+      - name: pk_pessoa
+        description: Chave primaria da pessoa.
+
+      - name: nom_pessoa
+        description: Nome da pessoa.  
+
+      - name: sgl_tipo_pessoa
+        description: Sigla tipo de pessoa.       
+          
+
+
