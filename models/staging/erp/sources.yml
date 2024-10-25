@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: erp_adventureworks
     description: Sistema de vendas da empresa Adventure Works.
-    database: fea24_9
+    database: fea24_6
     schema: raw_adventure_works
     tables:
       - name: salesorderheader
