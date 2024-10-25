@@ -1,7 +1,7 @@
 version: 2
 
 models:
-  - name: stg_erp__customer
+  - name: stg_erp__store
     description: Tabela de preparação dos dados brutos das lojas.
 
     columns:
