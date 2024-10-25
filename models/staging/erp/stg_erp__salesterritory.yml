@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: stg_erp__salesterritory
+    description: Tabela de preparação dos dados brutos territorios de venda.
+
+    columns:
+      - name: pk_territorio
+        description: Chave primaria do territorio.
+
+      - name: fk_pais
+        description: Chave estrangeira do pais.  
+
+      - name: nom_territorio
+        description:  Nome do territorio.      
+
+      - name: nom_continente
+        description:  Nome do continente.           
+
+

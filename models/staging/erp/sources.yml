@@ -114,3 +114,11 @@ sources:
             data_tests:
               - unique
               - not_null              
+
+      - name: salesterritory
+        description: Contém as áreas geográficas de vendas.
+        columns:
+          - name: territoryid
+            data_tests:
+              - unique
+              - not_null
