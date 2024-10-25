@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_erp__customer
+    description: Tabela de preparação dos dados brutos das lojas.
+
+    columns:
+      - name: pk_loja
+        description: Chave primaria da loja.
+
+      - name: fk_vendedor
+        description: Chave estrangeira do vendedor.  
+
+      - name: dsc_loja
+        description: Descrição nome da loja.       
+          
+
+

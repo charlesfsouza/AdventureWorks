@@ -8,7 +8,7 @@ models:
       - name: pk_cliente
         description: Chave primaria de cliente.
 
-      - name: pk_pessoa
+      - name: fk_pessoa
         description: Chave estrangeira de pessoa.  
 
       - name: fk_loja
