@@ -8,7 +8,7 @@ with
         select
 
             cast(purchaseorderid as int)  as pk_ordem_compra
-            ,cast(status as int) as fk_status_venda
+            ,cast(status as int) as fk_status_ordem_compra
        
         from fonte
      )
