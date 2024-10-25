@@ -1,0 +1,13 @@
+version: 2
+
+models:
+  - name: stg_erp__purchaseorderheader
+    description: Tabela de preparação dos dados brutos de ordem de compra.
+
+    columns:
+      - name: pk_ordem_compra
+        description: Chave primaria da ordem de compra.
+
+      - name: fk_status_ordem_compra
+        description: Chave estrangeira do status da ordem de compra.  
+

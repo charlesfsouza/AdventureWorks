@@ -122,3 +122,11 @@ sources:
             data_tests:
               - unique
               - not_null
+
+      - name: purchaseorderheader
+        description: Contém as ordens de compra.
+        columns:
+          - name: purchaseorderid
+            data_tests:
+              - unique
+              - not_null              
