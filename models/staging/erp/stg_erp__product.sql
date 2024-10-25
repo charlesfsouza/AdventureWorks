@@ -8,7 +8,7 @@ with
         select
 
             cast(productid as int)  as pk_produto
-            ,cast(productsubcategoryid as int) as fk_produto_subcategoria
+            ,nvl(cast(productsubcategoryid as int),-1) as fk_produto_subcategoria
             ,cast(name as string) as dsc_produto
        
         from fonte_produtos
