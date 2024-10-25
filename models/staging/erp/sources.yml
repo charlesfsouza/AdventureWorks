@@ -74,3 +74,43 @@ sources:
             data_tests:
               - unique
               - not_null             
+
+      - name: stateprovince
+        description: Contém informações sobre os estados e províncias.
+        columns:
+          - name: stateprovinceid
+            data_tests:
+              - unique
+              - not_null
+              
+      - name: countryregion
+        description: Contém informações sobre os países.
+        columns:
+          - name: countryregioncode
+            data_tests:
+              - unique
+              - not_null
+              
+      - name: customer
+        description: Contém informações sobre os clientes.
+        columns:
+          - name: customerid
+            data_tests:
+              - unique
+              - not_null
+              
+      - name: store
+        description: Contém informações sobre as lojas físicas da empresa
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null 
+              
+      - name: person
+        description: Informações sobre pessoas físicas.
+        columns:
+          - name: businessentityid
+            data_tests:
+              - unique
+              - not_null              

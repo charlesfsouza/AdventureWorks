@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_erp__stateprovince
+    description: Tabela de preparação dos dados provincia estado.
+
+    columns:
+      - name: pk_provincia_estado
+        description: Chave primaria da provincia estado.
+
+      - name: fk_territorio
+        description: Chave estrangeira do territorio.  
+
+      - name: sgl_provincia_estado
+        description:  Sigla da provincia estado.         
+
+      - name: sgl_regiao_pais
+        description:  Sigla da regiao do pais.      
+
+      - name: dsc_provincia_estado
+        description:  Descrição nome da provincia estado.   
+
+
+        
+
+
