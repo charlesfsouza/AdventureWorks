@@ -8,10 +8,8 @@ with
         select
 
             cast(businessentityid as int)  as pk_pessoa
-            ,cast(firstname as character) as nome_primeiro_pessoa
-            ,cast(middlename as character) as nome_meio_pessoa
-            ,cast(lastname as character) as nome_ultimo_pessoa
-            ,cast(persontype as character) as sgl_tipo_pessoa           
+            ,firstname || ' ' || middlename || ' ' || lastname as nom_pessoa
+            ,persontype  as sgl_tipo_pessoa     
        
         from fonte_pessoas
      )

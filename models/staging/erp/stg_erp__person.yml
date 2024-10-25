@@ -8,13 +8,7 @@ models:
       - name: pk_pessoa
         description: Chave primaria da pessoa.
 
-      - name: nome_primeiro_pessoa
-        description: Nome da pessoa.  
-
-      - name: nome_meio_pessoa
-        description: Nome da pessoa.  
-
-      - name: nome_ultimo_pessoa
+      - name: nom_pessoa
         description: Nome da pessoa.  
 
       - name: sgl_tipo_pessoa
