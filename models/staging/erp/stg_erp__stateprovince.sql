@@ -7,11 +7,11 @@ with
      ,renomeacao as (
         select
 
-            cast(STATEPROVINCEID as int)  as pk_provincia_estado
-            ,cast(TERRITORYID as int) as fk_territorio
-            ,cast(STATEPROVINCECODE as int) as sgl_provincia_estado
-            ,cast(COUNTRYREGIONCODE as character) as sgl_regiao_pais
-            ,cast(NAME as character) as dsc_provincia_estado
+            cast(stateprovinceid as int)  as pk_provincia_estado
+            ,cast(territoryid as int) as fk_territorio
+            ,cast(countryregioncode as character) as fk_pais            
+            ,cast(stateprovincecode as int) as sgl_provincia_estado
+            ,cast(name as character) as dsc_provincia_estado
 
 
        

@@ -14,8 +14,8 @@ models:
       - name: sgl_provincia_estado
         description:  Sigla da provincia estado.         
 
-      - name: sgl_regiao_pais
-        description:  Sigla da regiao do pais.      
+      - name: fk_pais
+        description:  Chave estrangeira do pais.      
 
       - name: dsc_provincia_estado
         description:  Descrição nome da provincia estado.   
