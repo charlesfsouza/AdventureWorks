@@ -9,7 +9,7 @@ with
 
             cast(businessentityid as int)  as pk_loja
             ,cast(salespersonid as int) as fk_vendedor
-            ,cast(name as character) as dsc_loja           
+            ,cast(name as string) as dsc_loja           
        
         from fonte_lojas
      )

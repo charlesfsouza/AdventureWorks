@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_erp__creditcard
+    description: Tabela de preparação dos dados brutos dos cartões de crédito.
+
+    columns:
+      - name: pk_pais
+        description: Chave primaria do país.
+
+      - name: nom_pais
+        description: Nome do país.  
+       
+
+
