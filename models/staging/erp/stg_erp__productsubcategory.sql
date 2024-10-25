@@ -9,7 +9,7 @@ with
 
             cast(productsubcategoryid as int)  as pk_produto_subcategoria
             ,cast(productcategoryid as int) as fk_produto_categoria
-            ,cast(name as character) as dsc_produto_subcategoria
+            ,cast(name as string) as dsc_produto_subcategoria
        
         from fonte_produtos_subcategorias
      )

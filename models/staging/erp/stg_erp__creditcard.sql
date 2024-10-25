@@ -8,7 +8,7 @@ with
         select
 
             cast(creditcardid as int)  as pk_cartao_credito
-            ,cast(cardtype as character) as dsc_tipo_cartao
+            ,cast(cardtype as string) as dsc_tipo_cartao
 
        
         from fonte_cartoes_credito

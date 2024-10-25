@@ -8,8 +8,8 @@ with
         select
 
             cast(salesreasonid as int)  as pk_motivo
-            ,cast(name as character) as dsc_motivo
-            ,cast(reasontype as character) as dsc_motivo_tipo
+            ,cast(name as string) as dsc_motivo
+            ,cast(reasontype as string) as dsc_motivo_tipo
        
         from fonte_motivos
      )

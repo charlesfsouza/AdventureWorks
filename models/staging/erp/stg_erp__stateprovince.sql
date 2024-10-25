@@ -9,9 +9,9 @@ with
 
             cast(stateprovinceid as int)  as pk_provincia_estado
             ,cast(territoryid as int) as fk_territorio
-            ,cast(countryregioncode as character) as fk_pais            
+            ,cast(countryregioncode as string) as fk_pais            
             ,cast(stateprovincecode as int) as sgl_provincia_estado
-            ,cast(name as character) as dsc_provincia_estado
+            ,cast(name as string) as dsc_provincia_estado
 
 
        
