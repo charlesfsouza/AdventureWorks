@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: int_motivo_pedido
+    description: Preparação da dimensão de motivo do pedido.
+
+    columns:
+      - name: pk_motivo_pedido
+        description: Chave primaria do motivo do pedido.
+        tests:
+          - unique
+          
+      - name: fk_pedido
+        description: Chave estrangeira do pedido.  
+
+      - name: dsc_motivo
+        description: Descrição do motivo do pedido.  
+
+      - name: dsc_tipo
+        description: Descrição do tipo do motivo do pedido.  
+
+
+
