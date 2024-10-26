@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: int_status_construcao
+    description: Construcao da dimensão status.
+
+    columns:
+      - name: fk_status
+        description: Chave primaria do status.
+
+      - name: dsc_status
+        description: Descrição do status.  
+
+
+
