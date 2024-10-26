@@ -11,6 +11,7 @@ with
             ,cast(status as int) as fk_status_pedido
             ,cast(customerid as int) as fk_cliente
             ,cast(territoryid as int) as fk_regiao
+            ,cast(billtoaddressid as int) as fk_endereco_envio            
             ,cast(creditcardid as int) as fk_cartao_credito
             ,cast(orderdate as date) as fk_dat_pedido
             ,cast(duedate as date) fk_dat_vencimento

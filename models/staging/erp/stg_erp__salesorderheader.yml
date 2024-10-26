@@ -17,6 +17,9 @@ models:
       - name: fk_regiao
         description: Chave estrangeira regiao / territorial do pedido.        
 
+      - name: fk_endereco_envio
+        description: Chave estrangeira regiao de envio. 
+
       - name: fk_cartao_credito
         description: Chave estrangeira do cartao de credito utilizado no pedido.
       

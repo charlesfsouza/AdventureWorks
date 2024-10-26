@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: dim_cartao_credito
+    description: Tabela com dados da dimensão cartões de crédito.
+
+    columns:
+      - name: pk_cartao_credito
+        description: Chave primaria do cartão de crédito.
+
+      - name: dsc_tipo_cartao
+        description: Descrição do tipo de cartão de crédito.  
+       
+
+

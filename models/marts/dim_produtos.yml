@@ -1,0 +1,23 @@
+version: 2
+
+models:
+  - name: dim_produtos
+    description: Tabela com dados da dimensão de produtos.
+
+    columns:
+      - name: pk_produto
+        description: Chave primaria do produto.
+        tests:
+          - unique
+          
+      - name: dsc_produto
+        description: Descrição do produto.  
+
+      - name: dsc_categoria
+        description: Descrição da categoria do produto.  
+
+      - name: dsc_sub_categoria
+        description: Descrição da subcategoria do produto.  
+
+
+
