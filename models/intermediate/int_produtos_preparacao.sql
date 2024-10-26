@@ -45,7 +45,8 @@ with
     )
     ,joined as (
         select  
-            produtos.*
+            produtos.pk_produto
+            ,produtos.dsc_produto
             ,nova_categoria.dsc_produto_categoria as dsc_categoria
             ,nova_subcategoria.dsc_produto_subcategoria as dsc_sub_categoria
         from produtos
