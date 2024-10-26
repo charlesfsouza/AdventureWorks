@@ -7,7 +7,7 @@ with
      ,renomeacao as (
         select
 
-            cast(countryregioncode as int)  as pk_pais
+            cast(countryregioncode as string)  as pk_pais
             ,cast(name as string) as nom_pais
 
 
