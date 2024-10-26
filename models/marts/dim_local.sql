@@ -1,9 +1,8 @@
 with
     pedidos as (
-        select
-            distinct
-                billtoaddressid
-                ,
+        select distinct
+                fk_endereco_envio
+                ,fk_regiao
         from {{ ref('stg_erp__salesorderheader') }}
 
     )
@@ -31,7 +30,7 @@ with
         select
             *
         from
-            enderecos
+            pedidos
     )
 
  
