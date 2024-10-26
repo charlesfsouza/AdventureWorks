@@ -17,7 +17,7 @@ models:
       - name: fk_pais
         description:  Chave estrangeira do pais.      
 
-      - name: dsc_provincia_estado
+      - name: nom_provincia_estado
         description:  Descrição nome da provincia estado.   
 
 

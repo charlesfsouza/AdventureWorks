@@ -11,7 +11,7 @@ models:
       - name: fk_provincia_estado
         description: Chave estrangeira da provincia estado.  
 
-      - name: dsc_cidade
+      - name: nom_cidade
         description: Descrição / nome da cidade.   
        
 

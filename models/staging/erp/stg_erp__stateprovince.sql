@@ -11,7 +11,7 @@ with
             ,cast(territoryid as int) as fk_territorio
             ,cast(countryregioncode as string) as fk_pais            
             ,cast(stateprovincecode as string) as sgl_provincia_estado
-            ,cast(name as string) as dsc_provincia_estado
+            ,cast(name as string) as nom_provincia_estado
 
 
        

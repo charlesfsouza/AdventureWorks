@@ -9,7 +9,7 @@ with
 
             cast(addressid as int)  as pk_endereco
             ,cast(stateprovinceid as int) as fk_provincia_estado
-            ,cast(city as string) as dsc_cidade
+            ,cast(city as string) as nom_cidade
 
        
         from fonte_enderecos
