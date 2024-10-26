@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_endereco
+    description: Tabela com dados da dimensão de endereco.
+
+    columns:
+      - name: sk_endereco
+        description: Chave surrogada de endereco.
+          
+      - name: pk_endereco
+        description: Chave primaria de endereco.  
+        tests:
+          - unique
+
+      - name: nom_cidade
+        description: Nome da cidade.  
+
+      - name: nom_provincia_estado
+        description: Nome da provincia estado.  
+
+      - name: nom_territorio
+        description: Nome do territorio.  
+
+      - name: nom_continente
+        description: Nome do continente. 
+
+      - name: nom_territorio
+        description: Nome do territorio. 
+
+      - name: sgl_pais
+        description: Sigla do pais. 
+
+      - name: nom_pais
+        description: Nome do pais. 
