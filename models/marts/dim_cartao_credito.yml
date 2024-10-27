@@ -5,6 +5,9 @@ models:
     description: Tabela com dados da dimensão cartões de crédito.
 
     columns:
+      - name: sk_cartao_credito
+        description: Chave surrogada do cartão de crédito.
+ 
       - name: pk_cartao_credito
         description: Chave primaria do cartão de crédito.
 

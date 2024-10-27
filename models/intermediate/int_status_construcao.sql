@@ -13,7 +13,7 @@ with
     )
     , status_tratado as (
         select distinct
-            fk_status
+            fk_status as pk_status
             ,case 
                 when fk_status = 1 then 'In process'
                 when fk_status = 2 then 'Approved'

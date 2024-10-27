@@ -1,18 +1,26 @@
 with
-    status as (
+    pedidos as (
+        select distinct
+            fk_status_pedido
+        from {{ ref('stg_erp__salesorderheader') }}
+
+    )
+    ,status as (
         select
-            fk_status
+            pk_status
             ,dsc_status
         from {{ ref('int_status_construcao') }}
     )
-    ,transformado as (
+    ,joined as (
         select
-            fk_status
-            ,upper(dsc_status) as dsc_status
+            {{ dbt_utils.generate_surrogate_key(['pedidos.fk_status_pedido']) }} as sk_status            
+            ,nvl(pedidos.fk_status_pedido,'-1') as fk_status
+            ,nvl(upper(dsc_status),'NOT INFORMED') as dsc_status
         from
-            status
+            pedidos
+        left join status on status.pk_status = pedidos.fk_status_pedido
     )
 
  
 select *
-from transformado
+from joined

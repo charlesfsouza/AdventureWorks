@@ -5,7 +5,7 @@ models:
     description: Preparação da dimensão status.
 
     columns:
-      - name: fk_status
+      - name: pk_status
         description: Chave primaria do status.
 
       - name: dsc_status

@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: dim_cliente
+    description: Tabela com dados da dimensão de clientes.
+
+    columns:
+      - name: sk_cliente
+        description: Chave surrogada de cliente.
+          
+      - name: fk_cliente
+        description: Chave primaria de cliente.  
+        tests:
+          - unique
+
+      - name: fk_pessoa
+        description: Chave estrangeira de pessoa.  
+
+      - name: nom_cliente
+        description: Nome do cliente.  
+
+      - name: nom_loja
+        description: Nome da loja.  
+
+      - name: nom_continente
+        description: Nome do continente. 
+
+      - name: nom_territorio
+        description: Nome do territorio. 
+
+      - name: sgl_pais
+        description: Sigla do pais. 
+
+      - name: nom_pais
+        description: Nome do pais. 
