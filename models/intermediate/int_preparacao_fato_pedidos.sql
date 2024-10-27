@@ -44,7 +44,7 @@ with
     ,qtd_itens_por_pedido as (
         select
             fk_pedido
-            ,sum(qtd_pedido_item) as qtd_item
+            ,count(distinct pk_pedido_item) as qtd_item
         from itens_pedido
         group by fk_pedido 
 
