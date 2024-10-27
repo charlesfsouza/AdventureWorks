@@ -1,0 +1,67 @@
+version: 2
+
+models:
+  - name: int_preparacao_fato_pedidos
+    description: Tabela de preparação para a fato pedidos.
+
+    columns:
+      - name: sk_pedido_item
+        description: Chave surrogada de pedido item.
+        tests: 
+          - unique
+
+      - name: pk_pedido_item
+        description: Chave primária de pedido item.
+
+      - name: fk_pedido
+        description: Chave estrangeira de pedido.
+
+      - name: fk_produto
+        description: Chave estrangeira para ligação com a dimensão de produto.
+
+      - name: fk_status_pedido
+        description: Chave estrangeira para ligação com a dimensão de status do pedido.
+
+      - name: fk_cliente
+        description: Chave estrangeira para ligação com a dimensão de cliente.
+
+      - name: fk_endereco_envio
+        description: Chave estrangeira para ligação com a dimensão de endereço.
+
+      - name: fk_cartao_credito
+        description: Chave estrangeira para ligação com a dimensão de cartão de crétido.
+
+      - name: fk_motivo_pedido
+        description: Chave estrangeira para ligação com a dimensão de motivo pedido.
+
+      - name: fk_dat_pedido
+        description: Data do pedido e chave estrangeira para ligação com a dimensão de data.
+
+      - name: fk_dat_vencimento
+        description: Data do vencimento.
+
+      - name: fk_dat_envio
+        description: Data do envio.
+
+      - name: qtd_pedido
+        description: Quantidade de pedido. Representa a contagem de pedidos dividido pela quantidade de itens no pedido dividio pela quantidade de motivos do pedido.
+
+      - name: qtd_item
+        description: Quantidade de itens no pedido. Representa a soma de itens no pedido dividido pela quantidade de motivos do pedido.
+
+      - name: vlr_unitario
+        description: Valor unitário de cada ítem do pedido.
+
+      - name: pct_desconto_item
+        description: Percentual de desconto sobre o valor unitário.
+        
+      - name: vlr_desc
+        description: Valor de desconto sobre o valor unitário.
+
+      - name: vlr_negoc
+        description: Valor negociado. Representa o valor unitário multiplicado pela quantidade de ítens no pedido.
+
+      - name: vlr_negoc_liq
+        description: Valor unitário negociado líquido. Representa o valor unitário multiplicado pela quantidade de ítens no pedido multiplicado por (1-percentual de desconto)
+
+
