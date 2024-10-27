@@ -32,7 +32,7 @@ with
         select
            {{ dbt_utils.generate_surrogate_key(['pedidos.fk_cliente']) }} as sk_cliente 
            ,pedidos.fk_cliente
-           ,nlv(clientes.fk_pessoa,'-1') as fk_pessoa
+           ,nvl(clientes.fk_pessoa,'-1') as fk_pessoa
            ,nvl(upper(pessoas.nom_pessoa),'NOT INFORMED') as nom_cliente
            ,nvl(upper(lojas.dsc_loja),'NOT INFORMED') as nom_loja
 
