@@ -20,7 +20,7 @@ with
         select
             1 as id
             ,round(sum(qtd_pedido),0) as qtd_pedido
-        from {{ ref('stg_erp__salesorderheader') }}   
+        from {{ ref('int_preparacao_fato_pedidos') }}   
     )
     ,resultado as (
         select
