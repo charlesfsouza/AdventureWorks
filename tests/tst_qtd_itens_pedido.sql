@@ -1,0 +1,33 @@
+/*  
+    Teste para verificar se a quantidade de itens nos pedidos segregada está compativel com a quantidade de pedidos original
+    Por conta do arredondamento, como referencia, a quantidade de pedidos nao pode ser superior a 5
+
+*/
+
+{{ config (
+        severity = 'error'
+    )
+}}
+
+with
+    dado_original as (
+        select 
+            1 as id
+            ,sum(qtd_pedido_item) as qtd_pedido_item
+        from {{ ref('stg_erp__salesorderdetail') }}
+    ) 
+    ,dado_transformado as (
+        select
+            1 as id
+            ,round(sum(qtd_item),0) as qtd_pedido_item
+        from {{ ref('int_preparacao_fato_pedidos') }}   
+    )
+    ,resultado as (
+        select
+            abs(dado_original.qtd_pedido_item - dado_transformado.qtd_pedido_item) as dif
+        from dado_original
+        inner join dado_transformado on dado_transformado.id = dado_original.id
+    ) 
+    select dif
+    from resultado
+    where dif not between 0 and 5
