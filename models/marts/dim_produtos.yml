@@ -5,6 +5,10 @@ models:
     description: Tabela com dados da dimensão de produtos.
 
     columns:
+
+      - name: sk_produto
+        description: Chave surrogada do produto.
+
       - name: pk_produto
         description: Chave primaria do produto.
         tests:

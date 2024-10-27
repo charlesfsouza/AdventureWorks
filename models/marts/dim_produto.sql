@@ -22,14 +22,6 @@ with
             ,dsc_produto_subcategoria
         from {{ ref('stg_erp__productsubcategory') }}
     )
-   /* ,produtos as (
-        select
-            pk_produto
-            ,dsc_produto
-            ,dsc_categoria
-            ,dsc_sub_categoria
-        from {{ ref('int_produtos_preparacao') }}
-    ) */
     ,joined as (
         select
             {{ dbt_utils.generate_surrogate_key(['detalhe_pedidos.fk_produto']) }} as sk_produto
