@@ -5,7 +5,7 @@ models:
     description: Tabela dimensão de datas.
 
     columns:
-      - name: fk_data 
+      - name: pk_data 
         description:  Data
         tests:
           - unique

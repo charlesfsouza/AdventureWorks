@@ -14,7 +14,7 @@ with
     ,joined as (
         select
             {{ dbt_utils.generate_surrogate_key(['pedidos.fk_status_pedido']) }} as sk_status            
-            ,nvl(pedidos.fk_status_pedido,'-1') as fk_status
+            ,nvl(pedidos.fk_status_pedido,'-1') as pk_status
             ,nvl(upper(dsc_status),'NOT INFORMED') as dsc_status
         from
             pedidos

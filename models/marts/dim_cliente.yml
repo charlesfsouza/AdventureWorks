@@ -8,7 +8,7 @@ models:
       - name: sk_cliente
         description: Chave surrogada de cliente.
           
-      - name: fk_cliente
+      - name: pk_cliente
         description: Chave primaria de cliente.  
         tests:
           - unique

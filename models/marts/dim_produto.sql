@@ -25,7 +25,7 @@ with
     ,joined as (
         select
             {{ dbt_utils.generate_surrogate_key(['detalhe_pedidos.fk_produto']) }} as sk_produto
-            ,nvl(detalhe_pedidos.fk_produto,'-1') as fk_produto
+            ,nvl(detalhe_pedidos.fk_produto,'-1') as pk_produto
             ,nvl(upper(produtos.dsc_produto),'NOT INFORMED') as dsc_produto
             ,nvl(upper(categorias.dsc_produto_categoria),'NOT INFORMED') as dsc_categoria
             ,nvl(upper(subcategorias.dsc_produto_subcategoria),'NOT INFORMED') as dsc_sub_categoria

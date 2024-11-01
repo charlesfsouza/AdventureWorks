@@ -1,7 +1,7 @@
 with
     datas as (
         select
-            fk_data 
+            fk_data as pk_data
             ,data_anterior
             ,data_proxima
             ,dia_da_semana

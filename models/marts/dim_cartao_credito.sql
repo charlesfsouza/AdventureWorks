@@ -14,7 +14,7 @@ with
     ,joined as (
         select
             {{ dbt_utils.generate_surrogate_key(['pedidos.fk_cartao_credito']) }} as sk_cartao_credito
-            ,nvl(pedidos.fk_cartao_credito,'-1') as fk_cartao_credito
+            ,nvl(pedidos.fk_cartao_credito,'-1') as pk_cartao_credito
             ,nvl(upper(cartao_credito.dsc_tipo_cartao),'NOT INFORMED') as dsc_tipo_cartao
         from
             pedidos
