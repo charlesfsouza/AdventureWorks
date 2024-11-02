@@ -28,8 +28,8 @@ with
             ,nvl(upper(motivos.dsc_motivo),'NOT INFORMED') as dsc_motivo
             ,nvl(upper(motivos.dsc_motivo_tipo),'NOT INFORMED') as dsc_tipo
         from pedidos
-        inner left join pedidos_motivos on pedidos_motivos.fk_pedido = pedidos.pk_pedido
-        inner left join motivos on motivos.pk_motivo = pedidos_motivos.fk_motivo
+        inner join pedidos_motivos on pedidos_motivos.fk_pedido = pedidos.pk_pedido
+        inner join motivos on motivos.pk_motivo = pedidos_motivos.fk_motivo
     )
  
 select *
