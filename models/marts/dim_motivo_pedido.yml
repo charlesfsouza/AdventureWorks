@@ -5,10 +5,13 @@ models:
     description: Tabela com dados da dimensão de motivo pedido.
 
     columns:
-      - name: pk_motivo_pedido
-        description: Chave primaria do motivo do pedido.
+      - name: sk_motivo_pedido
+        description: Chave surrogada do motivo do pedido.
         tests:
           - unique
+
+      - name: pk_pedido_motivo
+        description: Chave estrangeira para o motivo do pedido.
           
       - name: fk_pedido
         description: Chave estrangeira do pedido.  
