@@ -61,4 +61,3 @@ with
 
 select *
 from joined
-where pk_pedido_motivo is null
