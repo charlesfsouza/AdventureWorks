@@ -27,7 +27,7 @@ with
     ),     
     dim_motivo_pedido as (
         select
-            pk_motivo_pedido
+            sk_motivo_pedido
             ,pk_motivo_pedido
             ,fk_pedido
             ,fk_motivo
