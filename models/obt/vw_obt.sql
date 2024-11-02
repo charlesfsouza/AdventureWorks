@@ -55,14 +55,63 @@ with
             left join dim_produto on dim_produto.pk_produto = fct_pedidos.fk_produto
             left join dim_status on dim_status.pk_status = fct_pedidos.fk_status_pedido
     )
-select * 
+select 
+    sk_pedido_item
+    ,pk_pedido_item
+    ,fk_pedido
+    ,fk_produto
+    ,fk_status_pedido
+    ,fk_cliente
+    ,fk_endereco_envio
+    ,fk_cartao_credito
+    ,fk_pedido_motivo
+    ,fk_dat_pedido
+    ,fk_dat_vencimento
+    ,fk_dat_envio
+    ,qtd_pedido
+    ,qtd_item
+    ,vlr_unitario
+    ,pct_desconto_item
+    ,vlr_desc
+    ,vlr_negoc
+    ,vlr_negoc_liq
+    ,sk_cartao_credito
+    ,pk_cartao_credito
+    ,dsc_tipo_cartao
+    ,sk_cliente
+    ,pk_cliente
+    ,fk_pessoa
+    ,nom_cliente
+    ,nom_loja
+    ,pk_data
+    ,data_anterior
+    ,data_proxima
+    ,dia_da_semana
+    ,dsc_dia_da_semana
+    ,dia_do_mes
+    ,dia_do_ano
+    ,semana_do_ano
+    ,mes_do_ano
+    ,dsc_mes_do_ano
+    ,quadrimestre
+    ,ano
+    ,sk_endereco
+    ,pk_endereco
+    ,nom_cidade
+    ,nom_provincia_estado
+    ,nom_territorio
+    ,nom_continente
+    ,sgl_pais
+    ,nom_pais
+    ,nvl(dsc_motivo,'NOT INFORMED') as dsc_motivo
+    ,nvl(dsc_tipo,'NOT INFORMED') as dsc_tipo
+    ,sk_produto
+    ,pk_produto
+    ,dsc_produto
+    ,dsc_categoria
+    ,dsc_sub_categoria
+    ,sk_status
+    ,pk_status
+    ,dsc_status 
 from joined
 
---,res as (select dsc_motivo, sum(qtd_pedido) as qtd
---from joined     
---group by dsc_motivo  
---)
---
---select *
---from res
---order by qtd desc
