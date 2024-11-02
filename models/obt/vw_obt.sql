@@ -26,12 +26,12 @@ with
 
     ),     
     dim_motivo_pedido as (
-        select *
-            --sk_pedido_motivo
-            --,pk_pedido_motivo
-            --,fk_motivo
-            --,dsc_motivo
-            --,dsc_tipo
+        select 
+            sk_pedido_motivo
+            ,pk_pedido_motivo
+            ,fk_motivo
+            ,dsc_motivo
+            ,dsc_tipo
         from {{ ref('dim_motivo_pedido') }}
 
     ), 
