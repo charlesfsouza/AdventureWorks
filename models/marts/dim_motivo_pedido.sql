@@ -21,7 +21,7 @@ with
     )
     ,joined as (
         select
-            {{ dbt_utils.generate_surrogate_key(['pedidos_motivos.pk_pedido','motivos.pk_motivo']) }} as sk_pedido_motivo
+            {{ dbt_utils.generate_surrogate_key(['pedidos.pk_pedido','motivos.pk_motivo']) }} as sk_pedido_motivo
             --,pedidos_motivos.pk_motivo_pedido as fk_motivo_pedido
             ,pedidos.pk_pedido as pk_pedido_motivo
             ,nvl(motivos.pk_motivo,'-1') as fk_motivo
