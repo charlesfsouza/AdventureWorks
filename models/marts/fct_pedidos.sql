@@ -5,11 +5,11 @@ with
             ,pk_pedido_item
             ,fk_pedido
             ,nvl(fk_produto,'-1') as fk_produto
-            ,nlv(fk_status_pedido,'-1') as fk_status_pedido
-            ,nlv(fk_cliente,'-1') as fk_cliente
-            ,nlv(fk_endereco_envio,'-1') as fk_endereco_envio 
-            ,nlv(fk_cartao_credito,'-1') as fk_cartao_credito 
-            ,nlv(fk_motivo_pedido,'-1') as fk_motivo_pedido
+            ,nvl(fk_status_pedido,'-1') as fk_status_pedido
+            ,nvl(fk_cliente,'-1') as fk_cliente
+            ,nvl(fk_endereco_envio,'-1') as fk_endereco_envio 
+            ,nvl(fk_cartao_credito,'-1') as fk_cartao_credito 
+            ,nvl(fk_motivo_pedido,'-1') as fk_motivo_pedido
             ,fk_dat_pedido
             ,fk_dat_vencimento
             ,fk_dat_envio
