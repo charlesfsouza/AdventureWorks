@@ -51,7 +51,7 @@ with
             left join dim_cliente on dim_cliente.pk_cliente = fct_pedidos.fk_cliente
             left join dim_data on dim_data.pk_data = fct_pedidos.fk_dat_pedido
             left join dim_endereco on dim_endereco.pk_endereco = fct_pedidos.fk_endereco_envio
-            left join dim_motivo_pedido on dim_motivo_pedido.pk_pedido_motivo = fct_pedidos.fk_pedido_motivo
+            left join dim_motivo_pedido on dim_motivo_pedido.pk_pedido_motivo = fct_pedidos.fk_pedido
             left join dim_produto on dim_produto.pk_produto = fct_pedidos.fk_produto
             left join dim_status on dim_status.pk_status = fct_pedidos.fk_status_pedido
     )
@@ -61,3 +61,4 @@ with
 
 select *
 from joined
+where pk_pedido_motivo is null

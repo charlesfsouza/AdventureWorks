@@ -35,9 +35,9 @@ with
     )
     ,motivos_pedido as (
         select
-            --pk_motivo_pedido
-            fk_motivo
-            ,fk_pedido
+            fk_pedido
+            ,fk_motivo
+            --,fk_pedido
         from {{ ref('stg_erp__salesorderheadersalesreason') }}
     )
 
@@ -131,7 +131,7 @@ with
             ,fk_cliente
             ,fk_endereco_envio
             ,fk_cartao_credito
-            ,fk_pedido_motivo
+            --,fk_pedido_motivo
 
             ,fk_dat_pedido
             ,fk_dat_vencimento
