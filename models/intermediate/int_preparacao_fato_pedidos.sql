@@ -78,7 +78,8 @@ with
            ,nvl(itens_pedido.pct_desconto_item,'0') as pct_desconto_item
 
            ,nvl(qtd_itens_por_pedido.qtd_item,'-1') as qtd_item_pedido            
-           ,nvl(motivos_pedido.fk_pedido,'-1') as fk_pedido_motivo         
+           ,nvl(motivos_pedido.fk_pedido,'-1') as fk_pedido_motivo 
+           ,nvl(motivos_pedido.fk_motivo,'-1') as fk_motivo                    
            ,nvl(qtd_motivos_por_pedido.qtd_motivo,'1') as qtd_motivo_pedido
 
         from
