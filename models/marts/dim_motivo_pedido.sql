@@ -1,5 +1,11 @@
 with
-    pedidos_motivos as (
+    pedidos as (
+        select distinct
+            pk_pedido
+        from {{ ref('stg_erp__salesorderheader') }}
+
+    )
+    ,pedidos_motivos as (
         select
             pk_motivo_pedido
             ,fk_motivo
@@ -17,11 +23,13 @@ with
         select
             {{ dbt_utils.generate_surrogate_key(['pedidos_motivos.pk_motivo_pedido']) }} as sk_motivo_pedido 
             ,pedidos_motivos.pk_motivo_pedido
-            --,pedidos_motivos.fk_pedido
+            ,pedidos.pk_pedido as fk_pedido
+            ,nvl(motivos.pk_motivo,'-1') as fk_motivo
             ,nvl(upper(motivos.dsc_motivo),'NOT INFORMED') as dsc_motivo
             ,nvl(upper(motivos.dsc_motivo_tipo),'NOT INFORMED') as dsc_tipo
-        from pedidos_motivos
-        left join motivos on motivos.pk_motivo = pedidos_motivos.fk_motivo
+        from pedidos
+        inner left join pedidos_motivos on pedidos_motivos.fk_pedido = pedidos.pk_pedido
+        inner left join motivos on motivos.pk_motivo = pedidos_motivos.fk_motivo
     )
  
 select *
