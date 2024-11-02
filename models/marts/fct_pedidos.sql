@@ -9,7 +9,7 @@ with
             ,nvl(fk_cliente,'-1') as fk_cliente
             ,nvl(fk_endereco_envio,'-1') as fk_endereco_envio 
             ,nvl(fk_cartao_credito,'-1') as fk_cartao_credito 
-            ,nvl(fk_pedido_motivo,'-1') as fk_pedido_motivo
+            --,nvl(fk_pedido_motivo,'-1') as fk_pedido_motivo
             ,fk_dat_pedido
             ,fk_dat_vencimento
             ,fk_dat_envio
