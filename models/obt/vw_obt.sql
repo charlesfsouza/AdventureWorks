@@ -29,7 +29,6 @@ with
         select
             sk_motivo_pedido
             ,pk_motivo_pedido
-            ,fk_pedido
             ,fk_motivo
             ,dsc_motivo
             ,dsc_tipo
