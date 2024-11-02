@@ -56,8 +56,11 @@ with
             left join dim_status on dim_status.pk_status = fct_pedidos.fk_status_pedido
     )
 
-       
-
-
 select *
-from joined
+from joined       
+
+
+--select sum(qtd_pedido)
+--from fct_pedidos
+--left join dim_motivo_pedido on dim_motivo_pedido.pk_pedido_motivo = fct_pedidos.fk_pedido
+--

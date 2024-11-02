@@ -35,9 +35,10 @@ with
     )
     ,motivos_pedido as (
         select
-            fk_pedido
+            pk_motivo_pedido
+            ,fk_pedido
             ,fk_motivo
-            --,fk_pedido
+
         from {{ ref('stg_erp__salesorderheadersalesreason') }}
     )
 
@@ -77,8 +78,9 @@ with
            ,nvl(itens_pedido.vlr_item,'0') as vlr_unitario
            ,nvl(itens_pedido.pct_desconto_item,'0') as pct_desconto_item
 
-           ,nvl(qtd_itens_por_pedido.qtd_item,'-1') as qtd_item_pedido            
-           ,nvl(motivos_pedido.fk_pedido,'-1') as fk_pedido_motivo 
+           ,nvl(qtd_itens_por_pedido.qtd_item,'-1') as qtd_item_pedido       
+           ,nvl(motivos_pedido.pk_motivo_pedido,'-1') as fk_pedido_motivo                
+           --,nvl(motivos_pedido.fk_pedido,'-1') as fk_pedido_motivo 
            ,nvl(motivos_pedido.fk_motivo,'-1') as fk_motivo                    
            ,nvl(qtd_motivos_por_pedido.qtd_motivo,'1') as qtd_motivo_pedido
 
@@ -131,7 +133,7 @@ with
             ,fk_cliente
             ,fk_endereco_envio
             ,fk_cartao_credito
-            --,fk_pedido_motivo
+            ,fk_pedido_motivo
 
             ,fk_dat_pedido
             ,fk_dat_vencimento
