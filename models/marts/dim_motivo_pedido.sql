@@ -17,7 +17,7 @@ with
         select
             {{ dbt_utils.generate_surrogate_key(['pedidos_motivos.pk_motivo_pedido']) }} as sk_motivo_pedido 
             ,pedidos_motivos.pk_motivo_pedido
-            ,pedidos_motivos.fk_pedido
+            --,pedidos_motivos.fk_pedido
             ,nvl(upper(motivos.dsc_motivo),'NOT INFORMED') as dsc_motivo
             ,nvl(upper(motivos.dsc_motivo_tipo),'NOT INFORMED') as dsc_tipo
         from pedidos_motivos
