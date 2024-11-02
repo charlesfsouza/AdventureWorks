@@ -60,7 +60,7 @@ select *
 from joined       
 
 
---select sum(qtd_pedido)
---from fct_pedidos
---left join dim_motivo_pedido on dim_motivo_pedido.pk_pedido_motivo = fct_pedidos.fk_pedido
---
+---select sum(qtd_pedido)
+---from fct_pedidos
+---left join dim_motivo_pedido on dim_motivo_pedido.pk_pedido_motivo = fct_pedidos.fk_motivo_pedido
+-----
