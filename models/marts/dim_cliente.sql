@@ -45,4 +45,4 @@ with
     )
  
 select *
-from pessoas
+from joined
