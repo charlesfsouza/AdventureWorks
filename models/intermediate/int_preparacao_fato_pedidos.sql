@@ -122,7 +122,7 @@ with
 
     ,final as (
         select
-             {{ dbt_utils.generate_surrogate_key(['pk_pedido','fk_pedido_item','fk_produto','fk_cliente','fk_pedido_motivo'])}} as sk_pedido_item
+             {{ dbt_utils.generate_surrogate_key(['pk_pedido','fk_pedido_item','fk_produto','fk_cliente','fk_pedido_motivo','fk_motivo'])}} as sk_pedido_item
             ,fk_pedido_item as pk_pedido_item
             ,pk_pedido as fk_pedido
             ,fk_produto
