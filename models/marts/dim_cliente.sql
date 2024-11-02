@@ -3,6 +3,7 @@ with
         select distinct
                 fk_cliente
         from {{ ref('stg_erp__salesorderheader') }}
+        
 
     )
     ,clientes as (
@@ -39,7 +40,7 @@ with
         from
             pedidos
         left join clientes on clientes.pk_cliente = pedidos.fk_cliente    
-        left join pessoas on pessoas.pk_pessoa = clientes.fk_pessoa
+        left join pessoas on pessoas.pk_pessoa = clientes.pk_cliente
         left join lojas on lojas.pk_loja = clientes.fk_loja      
     )
  
