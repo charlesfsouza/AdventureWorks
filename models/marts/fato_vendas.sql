@@ -20,7 +20,7 @@ with
             ,vlr_desc
             ,vlr_negoc
             ,vlr_negoc_liq
-        from {{ ref('int_preparacao_fato_pedidos') }}
+        from {{ ref('int_preparacao_fato_vendas') }}
 
     )
 

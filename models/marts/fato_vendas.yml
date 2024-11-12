@@ -1,8 +1,8 @@
 version: 2
 
 models:
-  - name: int_preparacao_fato_pedidos
-    description: Tabela de preparação para a fato pedidos.
+  - name: fato_vendas
+    description: Tabela fato vendas.
 
     columns:
       - name: sk_pedido_item
@@ -30,9 +30,6 @@ models:
 
       - name: fk_cartao_credito
         description: Chave estrangeira para ligação com a dimensão de cartão de crétido.
-
-      - name: fk_motivo_pedido
-        description: Chave estrangeira para ligação com a dimensão de motivo pedido.
 
       - name: fk_dat_pedido
         description: Data do pedido e chave estrangeira para ligação com a dimensão de data.

@@ -2,7 +2,7 @@
 with
     fct_pedidos as (
         select *
-        from {{ ref('fct_pedidos') }}
+        from {{ ref('fato_vendas') }}
 
     ),
     dim_cartao_credito as (
